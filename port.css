@@ -29,6 +29,7 @@ body {
 }
 #mainnav .nav-link:hover {
   color: #5f1854;
+  font-size: 1.5em;
   box-shadow: 0 0.5em 0.8em -0.3em #b08f26;
 }
 #mainnav button:hover {
@@ -274,4 +275,12 @@ s .container .card .face.face2 .content a {
   opacity: 0.3;
   font-size: 13px;
   margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
 }
