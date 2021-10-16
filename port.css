@@ -312,11 +312,3 @@ s .container .card .face.face2 .content a {
     text-transform: unset;
   }
 }
-
-@media (max-width: 768px) {
-  .navbar-nav {
-    position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
-  }
-}
