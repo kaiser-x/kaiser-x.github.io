@@ -1,4 +1,4 @@
-root {
+* {
   margin: 0;
   padding: 0;
 }
@@ -63,12 +63,34 @@ body {
   color: blanchedalmond;
   padding: 0%;
 }
+#welcome .icon {
+  font-size: 30px;
+  width: 56px;
+  height: 56px;
+  line-height: 56px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75;
+}
+
+#welcome .icon:hover {
+  background: linear-gradient(to bottom right, #0a0a0a 33%, #9900cc 100%);
+  color: white;
+  box-shadow: 0 0.5em 1em -0.1em #b08f26;
+  transform: translateY(-0.25em);
+  border-color: 1px solid #b08f26;
+  cursor: pointer;
+}
 #welcome h1 {
-  font-size: 6em;
+  font-size: 3em;
   text-transform: unset;
 }
 #welcome p {
-  font-size: 2em;
+  font-size: 1em;
   text-transform: unset;
 }
 #Projects {
@@ -278,7 +300,21 @@ s .container .card .face.face2 .content a {
 }
 
 @media (min-width: 768px) {
-  .navbar-nav.navbar-center {
+  body {
+    margin: 0 1.5%;
+  }
+  #welcome h1 {
+    font-size: 6em;
+    text-transform: unset;
+  }
+  #welcome p {
+    font-size: 2em;
+    text-transform: unset;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
     position: absolute;
     left: 50%;
     transform: translatex(-50%);
